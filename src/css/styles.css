@@ -1,0 +1,26 @@
+body{
+     background-color: #1e1e1e;
+     font-family: 'JetBrains Mono', monospace;
+     font-weight: 500;
+     color: #f7f8f9;
+}
+
+/*div.icondg {
+     display: block;
+     margin-left: 20px ;
+     margin-right: 40px;
+     width: 50%;
+   }
+*/
+td.icon{
+     width:10px;
+     
+     
+     position: relative;
+     top: 0px;
+     left: 950px;
+}
+
+strong.b{
+     font-weight: bold;
+}
