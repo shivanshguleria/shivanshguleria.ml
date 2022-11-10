@@ -19,6 +19,10 @@ td.icon{
      left: 950px;
 }
 
+ul{
+     list-style-type: none;
+}
+
 li.down{
      margin: 10px;
    }
