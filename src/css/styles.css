@@ -21,6 +21,6 @@ td.icon{
      left: 950px;
 }
 
-strong.b{
-     font-weight: bold;
-}
+li.down{
+     margin: 10px 0;
+   }
