@@ -35,3 +35,21 @@ span.down{
      
     margin: 15px;
   }
+
+  @media screen and (max-device-width: 480px)
+  {
+   td.icon{
+        display: none;
+   }
+
+  
+ }
+
+ @media screen and (min-device-width: 769px)
+  {
+   table.media-hide{
+        display: none;
+   }
+
+  
+ }
