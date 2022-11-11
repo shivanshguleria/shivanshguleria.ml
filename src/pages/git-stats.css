@@ -1,6 +1,37 @@
+* {
+    margin: 20;
+    padding: 30;
+  }
 body{
     background-color: #1e1e1e;
     font-family: 'JetBrains Mono', monospace;
     font-weight: 500;
     color: #f7f8f9;
 }
+a{
+    color: #2DBE94;
+
+}
+a:visited {
+    color: #2DBE94;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #EFFBF7;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:active {
+    color:#2DBE94;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  h2{
+    font-size: 35px;
+}
+
+span.down{
+     
+    margin: 15px;
+  }
