@@ -1,7 +1,12 @@
+* {
+     margin: 20;
+     padding: 30;
+   }
+
+
 body{
      background-color: #1e1e1e;
      font-family: 'JetBrains Mono', monospace;
-     font-weight: 500;
      color: #f7f8f9;
 }
 
@@ -12,19 +17,57 @@ body{
      width: 50%;
    }
 */
-td.icon{
-     width:10px;
-      position: relative;
-     top: 0px;
-     left: 950px;
+h1{
+     font-size: 50px;
 }
 
-ul{
+h3{
+     font-size: 20px;
+}
+
+h2{
+     font-size: 35px;
+}
+
+td.icon{
+     width:10px;
+     
+     
+     position: relative;
+     top: 0px;
+     left: 800px;  /*950*/
+}
+
+ul.hide{
      list-style-type: none;
+     
      padding: 0;
-     margin: 0;
+    
+}
+ul.extra{
+     margin: 2;
+     padding: 1;
 }
 
 li.down{
-     margin: 10px;
+     
+     margin: 15px;
+   }
+
+   @media screen and (max-device-width: 480px)
+    {
+     td.icon{
+          display: none;
+     }
+
+    
+   }
+
+   @media all and (min-device-width: 1024px)
+    {
+     table.media-hide{
+          display: none;
+     }
+
+    
    }
