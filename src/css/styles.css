@@ -63,7 +63,7 @@ li.down{
     
    }
 
-   @media all and (min-device-width: 1024px)
+   @media screen and (min-device-width: 1024px)
     {
      table.media-hide{
           display: none;
