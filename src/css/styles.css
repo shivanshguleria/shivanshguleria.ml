@@ -10,6 +10,22 @@ body{
      color: #f7f8f9;
 }
 
+a:visited {
+     color: #2DBE94;
+     background-color: transparent;
+     text-decoration: none;
+   }
+   a:hover {
+     color: #EFFBF7;
+     background-color: transparent;
+     text-decoration: underline;
+   }
+   a:active {
+     color: yellow;
+     background-color: transparent;
+     text-decoration: underline;
+   }
+
 /*div.icondg {
      display: block;
      margin-left: 20px ;
