@@ -18,12 +18,12 @@ a:visited {
    a:hover {
      color: #EFFBF7;
      background-color: transparent;
-     text-decoration: underline;
+     text-decoration: none;
    }
    a:active {
      color:#2DBE94;
      background-color: transparent;
-     text-decoration: underline;
+     text-decoration: none;
    }
 
 /*div.icondg {
