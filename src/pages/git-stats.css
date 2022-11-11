@@ -30,9 +30,3 @@ span.down{
     margin: 15px;
   }
 
-  @media screen and (max-device-width: 480px)
-  {
-   span.stats{
-    display: none;
-   }
-}
