@@ -8,25 +8,19 @@ body{
     font-weight: 500;
     color: #f7f8f9;
 }
-a{
-    color: #2DBE94;
 
+a{
+  color: #2DBE94;
+  background-color: transparent;
+  text-decoration: none;
 }
-a:visited {
-    color: #2DBE94;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #EFFBF7;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  a:active {
-    color:#2DBE94;
-    background-color: transparent;
-    text-decoration: underline;
-  }
+
+a:hover {
+  color: #EFFBF7;
+  background-color: transparent;
+  text-decoration: none;
+}
+
   h2{
     font-size: 35px;
 }
@@ -38,18 +32,7 @@ span.down{
 
   @media screen and (max-device-width: 480px)
   {
-   td.icon{
-        display: none;
+   span.img{
+    width: 480px;
    }
-
-  
- }
-
- @media screen and (min-device-width: 769px)
-  {
-   table.media-hide{
-        display: none;
-   }
-
-  
- }
+}

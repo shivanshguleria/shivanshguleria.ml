@@ -12,22 +12,16 @@ body{
 
 a{
      color: #2DBE94;
-}
-a:visited {
-     color: #2DBE94;
      background-color: transparent;
      text-decoration: none;
-   }
-   a:hover {
+}
+
+a:hover {
      color: #EFFBF7;
      background-color: transparent;
      text-decoration: none;
    }
-   a:active {
-     color:#2DBE94;
-     background-color: transparent;
-     text-decoration: none;
-   }
+ 
 
 /*div.icondg {
      display: block;
