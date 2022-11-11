@@ -32,7 +32,7 @@ span.down{
 
   @media screen and (max-device-width: 480px)
   {
-   span.img{
-    width: 480px;
+   span.stats{
+    display: none;
    }
 }
