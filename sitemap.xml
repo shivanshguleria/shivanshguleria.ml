@@ -1,15 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://shivanshguleria.ml</loc>
-  </url>
-  <url>
-    <loc>https://shivanshguleria.ml/cdn-cgi/l/email-protection</loc>
-  </url>
-  <url>
-    <loc>https://shivanshguleria.ml/src/pages/info.html</loc>
-  </url>
-  <url>
-    <loc>https://shivanshguleria.ml/src/pages/misc.html</loc>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://shivanshguleria.ml/</loc>
+  <lastmod>2022-11-10T19:59:02+00:00</lastmod>
+</url>
+
+
 </urlset>
