@@ -29,7 +29,7 @@ a:hover {
      text-decoration: none;
    }
 
-   a.opposite:hover{
+a.opposite:hover{
      color: #2DBE94;
      background-color: transparent;
      text-decoration: none;
