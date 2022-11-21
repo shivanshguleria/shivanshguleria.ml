@@ -28,7 +28,11 @@ a:hover {
      background-color: transparent;
      text-decoration: none;
    }
- 
+ a.opposite:hover{
+     color: #2DBE94;
+     background-color: transparent;
+     text-decoration: none;
+ }
 
 /*div.icondg {
      display: block;
