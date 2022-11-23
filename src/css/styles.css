@@ -10,6 +10,11 @@ body{
      color: #f7f8f9;
 }
 
+.dark-mode {
+     background-color: #F7FAFA;
+     color:#222222;
+     
+}
 a.opposite{
      color: #EFFBF7;
      background-color: transparent;

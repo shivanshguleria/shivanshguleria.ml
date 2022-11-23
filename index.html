@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-    <link id="page_favicon" href="/src/favicon.ico" rel="icon" type="image/x-icon">
+    <link id="page_favicon" href="./src/img/favicon.ico" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="src/css/styles.css">
     <title>Shivansh Guleria | Portfolio</title>
 </head>
@@ -49,7 +49,7 @@
     
     <h2>Tech Stack</h2>
     
-    <ul class="hide">
+    <ul>
         
         <li>
             <p>Frontend (Web Development)</p>
@@ -85,19 +85,38 @@
             </ul>
         </li>
     </ul>
-     
-
+       
+    <br>
+    <h2>Education</h2>
+    <ul>
+        <li>
+            <p>
+                <a class="opposite" href="https://apsdagshai.org/">APS, Dagshai</a>
+            </p>
+            <ul>
+                <li><p>2017-2021</p></li>
+            </ul>
+        </li>
+        <li>
+            <p>
+                <a class="opposite" href="https://srmist.edu.in/">SRMIST, Chennai</a>
+            </p>
+            <ul>
+                <li><p>2021-Present</p></li>
+            </ul>
+        </li>
+    </ul>
     <br>
     <h2>Experience</h2>
 
     <ul>
         <li><p><a class="opposite" href="https://srmiec.com/">SRM Indian Energy Conference</a></p></li>
         <ul>
-            <p>AUG 2022-Present [4 month]</p> 
+            <li><p>AUG 2022-Present [4 month]</p></li> 
         </ul>
         <li>ARL (Aakash Research Lab)</li>
         <ul>
-            <p>July 2022-Present [4 month]</p>   
+            <li><p>July 2022-Present [4 month]</p></li>   
         </ul>
     </ul>
     
@@ -118,8 +137,17 @@
         <li class="down">
             <a href="src\pages\misc.html">Misc</a>
         </li>
+        <li>
+            <button onclick="myFunction()">Toggle dark mode</button>
+        </li>
     </ul>
-        
+      
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
         
     
     
