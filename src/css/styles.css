@@ -35,16 +35,8 @@ a.opposite:hover{
      text-decoration: none;
  }
  
-
-/*div.icondg {
-     display: block;
-     margin-left: 20px ;
-     margin-right: 40px;
-     width: 50%;
-   }
-*/
 h1{
-     font-size: 90px;
+     font-size: 60px;
 }
 
 h3{
@@ -80,20 +72,4 @@ li.down{
      margin: 15px;
    }
 
-   @media screen and (max-device-width: 480px)
-    {
-     td.icon{
-          display: none;
-     }
-
-    
-   }
-
-   @media screen and (min-device-width: 769px)
-    {
-     table.media-hide{
-          display: none;
-     }
-
-    
-   }
+ 
