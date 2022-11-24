@@ -82,8 +82,8 @@ li.down{
 
    @media screen and (min-device-width: 769px)
     {
-     table.media-hide{
-          display: none;
+     h1{
+          font-size: 50px;
      }
 
     
