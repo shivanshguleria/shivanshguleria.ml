@@ -30,3 +30,8 @@ span.down{
     margin: 15px;
   }
 
+  img.svg{
+    height: 50px;
+    width: 50px;
+    filter: invert(66%) sepia(20%) saturate(1441%) hue-rotate(112deg) brightness(93%) contrast(78%);
+  }
