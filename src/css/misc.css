@@ -35,3 +35,8 @@ span.down{
     width: 50px;
     filter: invert(66%) sepia(20%) saturate(1441%) hue-rotate(112deg) brightness(93%) contrast(78%);
   }
+
+  ::selection {
+    background: #239273;
+    color: #1e1e1e;
+  }
