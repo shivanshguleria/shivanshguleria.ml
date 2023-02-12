@@ -82,5 +82,36 @@ li.down{
      background: #239273;
      color: #1e1e1e;
    }
+
+
+
+
+@media all and (min-width:320px){
+     td.right{
+          position: relative;
+          float: right;
+          right: -230px;
+     }
+     
+   }
+   @media all and (min-width:481px){
+     td.right{
+          position: relative;
+          float: right;
+          right: -500px;
+     }
+   }
+   @media all and (min-width:769px) {
+     td.right{
+          position: relative;
+          float: right;
+          right: -1270px;
+     }
+   }
+   a.hidden{
+     color: #1e1e1e;
+   }
+   
+   
    
    /*#1a7b5f #239273*/
