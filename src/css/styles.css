@@ -10,6 +10,12 @@ body{
      color: #f7f8f9;
 }
 
+.half-width{
+     width:50%;
+     margin: 0 auto;
+     color: white;
+   }
+
 a.opposite{
      color: #EFFBF7;
      background-color: transparent;
@@ -109,7 +115,7 @@ li.down{
           right: -1270px;
      }
    }
-   a.hidden{
+.hidden{
      color: #1e1e1e;
    }
    
