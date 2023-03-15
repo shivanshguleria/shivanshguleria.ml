@@ -119,7 +119,9 @@ li.down{
      color: #1e1e1e;
    }
    
-   
+.about-li {
+     padding: 5px;
+}
 
    
    /*#1a7b5f #239273*/
