@@ -123,5 +123,9 @@ li.down{
      padding: 5px;
 }
 
+.footer-links {
+     padding: 10px;
+     margin-left: -10px;
+}
    
    /*#1a7b5f #239273*/
