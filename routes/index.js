@@ -6,6 +6,7 @@ const path = require('path');
  //GET home page. 
 router.get('/', function(req, res) {
   res.sendFile(path.resolve('public/pages/index.html'));
+  console.log(req.ip);
 });
 
 //GET about
