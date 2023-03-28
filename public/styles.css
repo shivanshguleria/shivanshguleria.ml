@@ -4,7 +4,7 @@
      --main-bg-color: #1e1e1e;
      --main-font-color: #f7f8f9;
      --main-theme-color: #2DBE94;
-     
+     --surname-color: #aaaaaa;
 }
 
 /*For whole site*/
@@ -110,6 +110,10 @@ h2{
 .footer-links {
      padding: 10px;
      margin-left: -10px;
+}
+
+.surname {
+     color: var(--surname-color);
 }
    
    /*#1a7b5f #239273*/
