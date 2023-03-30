@@ -1,12 +1,10 @@
 var express = require('express');
 var router = express.Router();
 const path = require('path');
-const http = require("http");
 
 //GET home page. 
 router.get('/', function(req, res) {
   res.render('index', {title: 'Shivansh Guleria'});
-  console.log(`The client's IP Address is: ${req.socket.remoteAddress}`);
 });
 
 //GET about
