@@ -20,16 +20,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//Pages
 app.use('/', indexRouter);
 app.use('/about', indexRouter);
+app.use('/404', indexRouter);
 app.use('/resume', indexRouter);
 app.use('/sitemap', indexRouter);
-app.use('/404', indexRouter);
-app.use('/font-test', indexRouter)
+app.use('/test', indexRouter)
 
 //404
 app.get('*', function(req, res){
-  res.sendFile(__dirname + '/public/pages/404.html');
+  res.render('404', {title: 'Not Found'});
 });
 
 

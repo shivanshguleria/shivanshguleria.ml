@@ -117,3 +117,67 @@ h2{
 }
    
    /*#1a7b5f #239273*/
+
+/* CSS for 404*/
+
+.img {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 290px;
+}
+
+.h1 {
+     font-size: 90px;
+     text-align: center;
+     margin: 0%;
+}
+
+.h2 {
+     font-size: 40px;
+     text-align: center;
+     margin: 1%;
+}
+
+.h3 {
+     font-size: 20px;
+     text-align: center;
+     margin: 2%;
+}
+
+/*Style for test*/
+.size {
+     font-size: 48px;
+}
+
+.box-theme-color {
+     width: 100px;
+     padding: 20px;
+     margin: 20px;
+     background-color: var(--main-theme-color);
+}
+
+.box-font-color {
+     width: 100px;
+     padding: 20px;
+     margin: 20px;
+     background-color: var(--main-font-color);
+     color: var(--main-bg-color);
+}
+
+.box-color {
+     width: 100px;
+     padding: 20px;
+     margin: 20px;
+     background-color: var(--main-bg-color);
+     color: var(--main-font-color);
+     border: 2px solid var(--main-font-color);
+}
+
+.box-surname {
+     width: 100px;
+     padding: 20px;
+     margin: 20px;
+     background-color: var(--surname-color);
+     color: var(--main-bg-color);
+}
