@@ -22,11 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Pages
 app.use('/', indexRouter);
-app.use('/about', indexRouter);
-app.use('/404', indexRouter);
-app.use('/resume', indexRouter);
-app.use('/sitemap', indexRouter);
-app.use('/test', indexRouter)
+
 
 //404
 app.get('*', function(req, res){
