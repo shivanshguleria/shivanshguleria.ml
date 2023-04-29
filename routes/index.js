@@ -2,9 +2,13 @@ var express = require('express');
 var router = express.Router();
 const path = require('path');
 
+const views = require('../views.json')
 //GET home page. 
 router.get('/', function(req, res) {
-  res.render('index', {title: 'Shivansh Guleria'});
+  res.render('index', {
+    title: 'Shivansh Guleria',
+    views: views
+  });
 });
 
 //GET about
@@ -30,6 +34,13 @@ router.get('/resume', function(req, res) {
 //GET sitemap
 router.get('/sitemap', function(req, res) {
   res.sendFile(path.resolve('public/sitemap.xml'));
+});
+
+router.get('/files', function(req, res) {
+  res.render('files', {
+    title: "Files",
+    views: views
+  })
 });
 
 module.exports = router;

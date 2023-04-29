@@ -1,0 +1,103 @@
+
+{
+    "tech": [{
+          "skill": "Language",
+          "value": "C/C++, Python"
+        },{
+          "skill": "Web",
+          "value": "HTML5, CSS, JavaScript, Wordpress"
+        },{
+          "skill": "Database",
+          "value": "MySQL"
+        },{
+          "skill": "Systems",
+          "value": "Linux, Windows"
+        },{
+          "skill": "Other",
+          "value": "Git, Bash, Pug"
+        }]
+      ,
+    "projects": [{
+      "link": "https://github.com/ShivanshGuleria/Get-It-Quick",
+      "name": "Get-It-Quick",
+      "disc": "Recommends jobs on basis of resume"
+    },{
+      "link": "https://loc8r.shivanshguleria.ml/",
+      "name": "Loc8r",
+      "disc": "MEAN Stack application that helps you find wifi and places to work when you are out"
+    }]
+    ,
+    "exp": [{
+      "name": "SRM Indian Energy Conference",
+      "link": "https://srmiec.com/",
+      "time": "AUG 2022-Present"
+    },{
+      "name": "ARL (Aakash Research Lab)",
+      "link": "https://www.linkedin.com/company/aakash-research-labs/",
+      "time": "July 2022-Present"
+    }]
+    ,
+    "books": [
+        {
+            "id": 1,
+            "title": "Full Stack Javascript Development With MEAN",
+            "author": "Adam Bretz and Colin J. Ihrig",
+            "link": "https://files.shivanshguleria.ml/src/books/Full%20Stack%20Javascript%20Development%20With%20MEAN.pdf",
+            "size": 4.83,
+            "pages": 319
+        },{
+            "id": 2,
+            "title": "[1] Getting MEAN with Mongo, Express, Angular, and Node",
+            "author": "SIMON HOLMES",
+            "link": "https://files.shivanshguleria.ml/src/books/Getting%20MEAN%20with%20Mongo,%20Express,%20Angular,%20and%20Node.pdf",
+            "size": 16.4,
+            "pages": 442
+        },{
+            "id": 3,
+            "title": "MEAN Web Development",
+            "author": "Amos Q. Haviv",
+            "link": "https://files.shivanshguleria.ml/src/books/MEAN%20Web%20Development.pdf",
+            "size": 4.05,
+            "pages": 354
+        },{
+            "id": 4,
+            "title": "Full Stack Full-Stack React Projects 2nd Edition",
+            "author": "Shama Hoque",
+            "link":"https://files.shivanshguleria.ml/src/books/Full-Stack_React_Projects_2nd_Edition_(2020).pdf",
+            "size": 26.6,
+            "pages": 706
+        },{
+            "id": 5,
+            "title": "Dividend Investing for Income and Growth",
+            "author": "Stuart Chaussée",
+            "link":"https://files.shivanshguleria.ml/src/books/chausse_stuart_dividend_investing_for_income_and_growth.pdf",
+            "size": 2.01,
+            "pages": 145
+        },{
+            "id": 6,
+            "title": "K&R",
+            "author": "Dennis M. Ritchie",
+            "link":"https://files.shivanshguleria.ml/src/books/k&r.pdf",
+            "size": 20.2,
+            "pages": 288
+        },{
+            "id": 7,
+            "title": "[2] Getting MEAN with Mongo, Express, Angular, and Node 2nd Edition",
+            "author": "SIMON HOLMES",
+            "link":"https://files.shivanshguleria.ml/src/books/Getting%20MEAN%20with%20Mongo,%20Express,%20Angular,%20and%20Node%202nd%20Edition.pdf",
+            "size": 10.8,
+            "pages": 505
+        }
+    ]
+    ,
+    "cheatsheet": [{
+      "title": "CSS Flexbox",
+      "link": "https://files.shivanshguleria.ml/src/cheatsheets/css-flexbox.pdf"
+    },{
+      "title": "Github Cheatsheet",
+      "link": "https://files.shivanshguleria.ml/src/cheatsheets/github-git-cheat-sheet.pdf"
+    },{
+      "title": "HTML Cheatsheet",
+      "link": "https://files.shivanshguleria.ml/src/cheatsheets/htmlcheatsheet.pdf"
+    }]
+}

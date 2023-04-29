@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .p-5.text-center.bg-body-tertiary.rounded-2
+      h1.fw-bold Files 
+      ul.list-group
+        each book in views.books
+          li.list-group-item.d-flex.justify-content-between.align-items-start
+            .ms-2.me-auto
+              .fw-bold= book.title 
+                p.mb-1.ms-2.fw-normal= "by " + book.author
+            if book.size == undefined
+              h6.m-2.mt-2.fw= book.pages + " pages"
+            else 
+              h6.m-2.mt-2.fw= book.pages + " pages" + " | " + book.size + " mb"
+            a.btn.btn-primary.rounded-2.m-1(href= book.link role="button") Download
+      h1.m-1.fw-bold.fs-1 Cheatsheets 
+      .list-group.w-25.d-inline-flex
+        each cheat in views.cheatsheet
+          a.list-group-item.justify-content-center.align-item-center(href= cheat.link)= cheat.title
+          

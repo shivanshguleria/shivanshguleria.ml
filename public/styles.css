@@ -5,6 +5,8 @@
      --main-font-color: #f7f8f9;
      --main-theme-color: #2DBE94;
      --surname-color: #aaaaaa;
+     --bs-body-bg: #161616 !important;   
+     --bs-body-color: #f7f8f9 !important;                   /*for /files*/
 }
 
 /*For whole site*/
@@ -180,4 +182,23 @@ h2{
      margin: 20px;
      background-color: var(--surname-color);
      color: var(--main-bg-color);
+}
+
+/* Style for files*/
+
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 0 !important;
+}
+
+.btn-primary {
+     --bs-btn-bg: #185D49 !important;
+     --bs-btn-border-color: #185D49 !important;
+     --bs-btn-hover-bg: ##185D49 !important;
+     --bs-btn-hover-border-color: #185D49 !important;
+     --bs-btn-focus-shadow-rgb: #185D49 !important;
+     --bs-btn-active-bg: #185D49 !important;
+     --bs-btn-active-border-color: #185D49 !important;
+     --bs-btn-disabled-bg: #185D49 !important;
+     --bs-btn-disabled-border-color: #185D49 !important;
 }
