@@ -151,7 +151,12 @@ h2{
 .size {
      font-size: 48px;
 }
-
+.box-btn-files {
+     width: 100px;
+     padding: 20px;
+     margin: 20px;
+     background-color: #185D49;
+}
 .box-theme-color {
      width: 100px;
      padding: 20px;
