@@ -1,13 +1,10 @@
-# fly.toml app configuration file generated for lingering-morning-7364 on 2023-05-01T23:15:29+05:30
+# fly.toml app configuration file generated for holy-pond-4841 on 2023-05-02T00:09:14+05:30
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "lingering-morning-7364"
+app = "holy-pond-4841"
 primary_region = "sin"
-
-[env]
-  PORT = "8080"
 
 [http_service]
   internal_port = 8080
