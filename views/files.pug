@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  .p-5.container.text-center.bg-body-tertiary.rounded-2
+  .p-5.container.text-center.bg-body-tertiary.rounded-2.col.gx-4
       h1.fw-bold Files 
       ul.list-group
         each book in views.books
@@ -15,7 +15,7 @@ block content
               h6.m-2.mt-2.fw= book.pages + " pages" + " | " + book.size + " mb"
             a.btn.btn-primary.rounded-2.m-1(href= book.link role="button") Download
       h1.m-1.fw-bold.fs-1 Cheatsheets 
-      .list-group.w-25.d-inline-flex
+      .list-group.w-50.d-inline-flex.col.gx-4
         each cheat in views.cheatsheet
-          a.list-group-item.justify-content-center.align-item-center(href= cheat.link)= cheat.title
+          a.list-group-item.justify-content-center.align-item-center.col-sl(href= cheat.link)= cheat.title
           
