@@ -94,6 +94,13 @@
           "link":"https://files.shivanshguleria.ml/src/books/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf",
           "size": 29.6,
           "pages": 1278
+        },{
+          "id": 9,
+          "title": "Linux From Scratch",
+          "author": "Gerard Beekmans",
+          "link": "https://files.shivanshguleria.ml/src/books/LFS-11.3-SYSTEMD-BOOK.pdf",
+          "size": 1.86,
+          "pages": 321
         }
     ]
     ,
