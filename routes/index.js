@@ -36,6 +36,7 @@ router.get('/sitemap', function(req, res) {
   res.sendFile(path.resolve('public/sitemap.xml'));
 });
 
+//GET files
 router.get('/files', function(req, res) {
   res.render('files', {
     title: "Files",
