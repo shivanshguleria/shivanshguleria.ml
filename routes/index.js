@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const path = require('path');
-
+const packageVersion = require("../package.json");
 const views = require('../views.json')
 //GET home page. 
 router.get('/', function(req, res) {
@@ -10,10 +10,12 @@ router.get('/', function(req, res) {
     views: views
   });
 });
-
 //GET about
 router.get('/about', function(req, res) {
-  res.render('about', {title: 'About'});
+  res.render('about', {
+    title: 'About',
+    version: packageVersion.version
+  });
 });
 
 //GET 404
