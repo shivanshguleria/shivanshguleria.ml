@@ -105,6 +105,13 @@
           "link": "https://files.shivanshguleria.ml/src/books/LFS-11.3-SYSTEMD-BOOK.pdf",
           "size": 1.86,
           "pages": 321
+        },{
+          "id": 10,
+          "title":"Practical Reverse Engineering",
+          "author":" Bruce Dang, Alexandre Gazet, Elias Bachaalany",
+          "link":"https://files.shivanshguleria.ml/src/books/Practical-Reverse-Engineering.pdf",
+          "size":5.20,
+          "pages":383
         }
     ]
     ,
