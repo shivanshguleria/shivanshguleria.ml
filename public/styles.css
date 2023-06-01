@@ -1,4 +1,3 @@
-
 /*Specify variables*/
 :root {
      --main-bg-color: #161616;
@@ -207,3 +206,25 @@ h2{
      --bs-btn-disabled-bg: #185D49 !important;
      --bs-btn-disabled-border-color: #185D49 !important;
 }
+
+/* Style for scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+     width: 15px;
+   }
+   
+   /* Track */
+   ::-webkit-scrollbar-track {
+     background: #161616; 
+   }
+    
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+     background: #aaa; 
+   }
+   
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+     background: #aaa; 
+   }
