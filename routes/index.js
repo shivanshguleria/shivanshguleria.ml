@@ -84,8 +84,7 @@ router.post('/upload', (req,res) => {
   res.json({message: "Files Added"});
 })
 }
-else{                 
-  
+else{
   router.get('/files/upload', (req, res) => {
     res.redirect("https://www.youtube.com/watch?v=H8ZH_mkfPUY");
   });
