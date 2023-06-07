@@ -1,9 +1,10 @@
 {
   "name": "shivanshguleria.ml",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "start-prod": "set PORT=8080 && node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

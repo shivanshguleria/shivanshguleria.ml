@@ -3,6 +3,8 @@ var router = express.Router();
 const path = require('path');
 const packageVersion = require("../package.json");
 const views = require('../views.json')
+const fs = require('fs');
+require('dotenv').config();
 //GET home page. 
 router.get('/', function(req, res) {
   res.render('index', {
@@ -46,4 +48,50 @@ router.get('/files', function(req, res) {
   })
 });
 
+if(process.env.PORT === "3000"){
+//GET upload 
+router.get('/files/upload', (req, res) => {
+  res.render("upload", {
+    title: "Upload"
+  });
+});
+
+//POST upload
+router.post('/upload', (req,res) => {
+  let id = Object.keys(views.books).length + 1;
+  let title = req.body.title;
+  let author = req.body.cauthor;
+  let link = "https://files.shivanshguleria.ml/src/books/" + title + ".pdf";
+  let size = req.body.size;
+  let page = req.body.pages;
+  const data = fs.readFileSync("./views.json");
+  let myObject= JSON.parse(data);
+  let newData = {
+    id: id,
+    title: title,
+    author: author,
+    link: link,
+    size: size,
+    pages: page 
+  };
+  myObject['books'].push(newData);
+  jsonStr = JSON.stringify(myObject);
+  fs.writeFile("./views.json", jsonStr, (err) => {
+    // Error checking
+    if (err) throw err;
+    console.log("New data added");
+  });
+  res.json({message: "Files Added"});
+})
+}
+else{
+  router.get('/files/upload', (req, res) => {
+    res.redirect("https://www.youtube.com/watch?v=H8ZH_mkfPUY");
+  });
+
+  router.post('/upload', (req,res) => {
+    res.redirect("https://www.youtube.com/watch?v=H8ZH_mkfPUY");
+  });
+}
+console.log(process.env.PORT)
 module.exports = router;
