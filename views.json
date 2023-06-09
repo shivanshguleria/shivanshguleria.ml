@@ -36,6 +36,10 @@
             "link": "https://github.com/ShivanshGuleria/Get-It-Quick",
             "name": "Get-It-Quick",
             "disc": "Recommends jobs on basis of resume"
+        },{
+            "link": "/jsprojects",
+            "name": "javaScript Projects",
+            "disc": "Projects Done as part of learning javascript"
         }
     ],
     "exp": [

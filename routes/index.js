@@ -93,5 +93,18 @@ else{
     res.redirect("https://www.youtube.com/watch?v=H8ZH_mkfPUY");
   });
 }
+
+//GET projects
+router.get('/jsprojects',(req, res) => {
+  res.render('jsprojects', {title: "Projects"})
+})
+
+//GET /jsprojects/counterapp
+router.get('/jsprojects/counterapp', (req, res)=> {
+  res.sendFile(path.resolve('projects/counter-app/index.html'))
+})
+
+
+
 console.log(process.env.PORT)
 module.exports = router;
