@@ -157,5 +157,15 @@
             "title": "HTML Cheatsheet",
             "link": "https://files.shivanshguleria.ml/src/cheatsheets/htmlcheatsheet.pdf"
         }
+    ],
+    "jsprojects": [
+        {
+            "name": "Yarn Counter App",
+            "link": "/jsprojects/counterapp"
+        },
+        {
+            "name": "Calculater Challenge",
+            "link": "/jsprojects/calculater-challenge"
+        }
     ]
 }

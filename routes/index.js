@@ -96,14 +96,21 @@ else{
 
 //GET projects
 router.get('/jsprojects',(req, res) => {
-  res.render('jsprojects', {title: "Projects"})
+  res.render('jsprojects', {
+    title: "Projects",
+    views: views
+  })
 })
 
-//GET /jsprojects/counterapp
+//GET jsprojects/counterapp
 router.get('/jsprojects/counterapp', (req, res)=> {
-  res.sendFile(path.resolve('projects/counter-app/index.html'))
+  res.sendFile(path.resolve('projects/counter-app/index.html'));
 })
 
+//GET jsprojects/calculater-challenge
+router.get('/jsprojects/calculater-challenge', (req, res)=> {
+  res.sendFile(path.resolve('projects/calculater-challenge/index.html'));
+})
 
 
 console.log(process.env.PORT)
