@@ -36,7 +36,8 @@
             "link": "https://github.com/ShivanshGuleria/Get-It-Quick",
             "name": "Get-It-Quick",
             "disc": "Recommends jobs on basis of resume"
-        },{
+        },
+        {
             "link": "/jsprojects",
             "name": "javaScript Projects",
             "disc": "Projects Done as part of learning javascript"
@@ -142,6 +143,14 @@
             "link": "https://files.shivanshguleria.ml/src/books/[7]-Indian-Economy.pdf",
             "size": "10",
             "pages": "825"
+        },
+        {
+            "id": 12,
+            "title": "The gospel of wealth",
+            "author": "ANDREW CARNEGIE",
+            "link": "https://files.shivanshguleria.ml/src/books/The gospel of wealth.pdf",
+            "size": "0.737",
+            "pages": "10"
         }
     ],
     "cheatsheet": [
@@ -166,6 +175,10 @@
         {
             "name": "Calculater Challenge",
             "link": "/jsprojects/calculater-challenge"
+        },
+        {
+            "name": "Blackjack Game",
+            "link": "/jsprojects/blackjack-game"
         }
     ]
 }

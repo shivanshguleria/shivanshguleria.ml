@@ -112,6 +112,10 @@ router.get('/jsprojects/calculater-challenge', (req, res)=> {
   res.sendFile(path.resolve('projects/calculater-challenge/index.html'));
 })
 
+//GET jsprojects/blackjack-game
+router.get('/jsprojects/blackjack-game', (req, res) => {
+  res.sendFile(path.resolve('projects/blackjack-game/index.html'));
+})
 
 console.log(process.env.PORT)
 module.exports = router;
