@@ -104,17 +104,22 @@ router.get('/jsprojects',(req, res) => {
 
 //GET jsprojects/counterapp
 router.get('/jsprojects/counterapp', (req, res)=> {
-  res.sendFile(path.resolve('projects/counter-app/index.html'));
+  res.sendFile(path.resolve('projects/counter-app.html'));
 })
 
 //GET jsprojects/calculater-challenge
 router.get('/jsprojects/calculater-challenge', (req, res)=> {
-  res.sendFile(path.resolve('projects/calculater-challenge/index.html'));
+  res.sendFile(path.resolve('projects/calculater-challenge.html'));
 })
 
 //GET jsprojects/blackjack-game
 router.get('/jsprojects/blackjack-game', (req, res) => {
-  res.sendFile(path.resolve('projects/blackjack-game/index.html'));
+  res.sendFile(path.resolve('projects/blackjack-game.html'));
+})
+ 
+//GET jsprojects/emoji-fighter
+router.get("/jsprojects/emoji-fighter", (req, res) => {
+  res.sendFile(path.resolve('projects/emoji-fighter.html'));
 })
 
 console.log(process.env.PORT)

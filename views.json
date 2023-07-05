@@ -171,14 +171,15 @@
         {
             "name": "Yarn Counter App",
             "link": "/jsprojects/counterapp"
-        },
-        {
+        },{
             "name": "Calculater Challenge",
             "link": "/jsprojects/calculater-challenge"
-        },
-        {
+        },{
             "name": "Blackjack Game",
             "link": "/jsprojects/blackjack-game"
+        },{
+            "name": "Emoji Fighter",
+            "link": "/jsprojects/emoji-fighter"
         }
     ]
 }
