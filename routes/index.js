@@ -122,5 +122,15 @@ router.get("/jsprojects/emoji-fighter", (req, res) => {
   res.sendFile(path.resolve('projects/emoji-fighter.html'));
 })
 
+//GET jsprojects/sorting-fruits
+router.get("/jsprojects/sorting-fruits", (req, res) => {
+  res.sendFile(path.resolve('projects/fruit-sort.html'));
+})
+
+//GET jsprojects/password-generater
+router.get("/jsprojects/password-generater", (req, res) => {
+  res.sendFile(path.resolve('projects/password-generater.html'));
+})
+
 console.log(process.env.PORT)
 module.exports = router;

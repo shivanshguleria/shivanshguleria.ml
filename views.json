@@ -180,6 +180,9 @@
         },{
             "name": "Emoji Fighter",
             "link": "/jsprojects/emoji-fighter"
+        },{
+            "name": "Password Generater",
+            "link": "/jsprojects/password-generater"
         }
     ]
 }

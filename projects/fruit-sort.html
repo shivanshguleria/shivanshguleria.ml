@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="page_favicon" href="../favicon.ico" rel="icon" type="image/x-icon">
+    <title>Sorting Fruits</title>
+</head>
+<style>
+    body {
+        padding: 40px;
+        background: whitesmoke;
+        text-align: center;
+    }
+
+    #apple-shelf {
+        background: lightcoral;
+        border-radius: 10px;
+        height: 30px;
+        margin: 10px 0;
+        padding-top: 10px 
+    }
+
+    #orange-shelf {
+        background: lightsalmon;
+        border-radius: 10px;
+        padding-top: 10px;
+        height: 30px;
+    }
+
+    #sort-shelf {
+        background-color: 	#00abc5;
+        color: white;
+        border-radius: 10px;
+        border: 0px;
+        height: 30px;
+        margin: 10px 0;
+    }
+</style>
+<body>
+    <div id="apple-shelf"></div>  
+    <div id="orange-shelf"></div>
+    <button id="sort-shelf" onclick="sortFruits()">Sort</button>
+    <script>
+        let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"]
+        let appleShelf = document.getElementById("apple-shelf")
+        let orangeShelf = document.getElementById("orange-shelf")
+        function sortFruits() {
+            appleShelf.textContent = "";
+            orangeShelf.textContent = "";
+            for(let i = 0; i < fruit.length; i++) {
+                if(fruit[i] === "🍎") {
+                    appleShelf.textContent += "🍎";
+                } else if(fruit[i] === "🍊") {
+                    orangeShelf.textContent += "🍊";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
