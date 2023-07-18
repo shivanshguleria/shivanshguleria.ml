@@ -183,6 +183,9 @@
         },{
             "name": "Password Generater",
             "link": "/jsprojects/password-generater"
+        },{
+            "name": "leadsTracker Chrome Extension",
+            "link": "/jsprojects/leadsTracker-extension"
         }
     ]
 }

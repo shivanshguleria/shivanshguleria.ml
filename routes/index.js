@@ -132,5 +132,10 @@ router.get("/jsprojects/password-generater", (req, res) => {
   res.sendFile(path.resolve('projects/password-generater.html'));
 })
 
+//GET jsprojects/leadsTracker-extension
+router.get("/jsprojects/leadsTracker-extension", (req, res) => {
+  res.redirect("https://files.shivanshguleria.ml/src/misc/leadsTracker.zip")
+})
+
 console.log(process.env.PORT)
 module.exports = router;
