@@ -139,7 +139,7 @@ router.get("/jsprojects/leadsTracker-extension", (req, res) => {
 
 //GET /jsprojects/add-to-cart
 router.get("/jsprojects/add-to-cart",(req, res) => {
-  res.redirect("https://add-to-cart-shivanshguleria.netlify.app/")
+  res.redirect("https://shivanshguleria.github.io/add-to-cart/")
 })
 console.log(process.env.PORT)
 module.exports = router;
