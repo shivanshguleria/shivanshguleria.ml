@@ -186,6 +186,9 @@
         },{
             "name": "leadsTracker Chrome Extension",
             "link": "/jsprojects/leadsTracker-extension"
+        },{
+            "name": "add-to-cart",
+            "link": "/jsprojects/add-to-cart"
         }
     ]
 }

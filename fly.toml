@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for holy-pond-4841 on 2023-05-02T00:09:14+05:30
+# fly.toml app configuration file generated for shivanshguleria on 2023-07-24T14:23:25+05:30
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "holy-pond-4841"
+app = "shivanshguleria"
 primary_region = "sin"
 
 [http_service]
@@ -11,3 +11,4 @@ primary_region = "sin"
   force_https = true
   auto_stop_machines = true
   auto_start_machines = true
+  min_machines_running = 0

@@ -137,5 +137,9 @@ router.get("/jsprojects/leadsTracker-extension", (req, res) => {
   res.redirect("https://files.shivanshguleria.ml/src/misc/leadsTracker.zip")
 })
 
+//GET /jsprojects/add-to-cart
+router.get("/jsprojects/add-to-cart",(req, res) => {
+  res.redirect("https://add-to-cart-shivanshguleria.netlify.app/")
+})
 console.log(process.env.PORT)
 module.exports = router;

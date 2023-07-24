@@ -1,6 +1,6 @@
 {
   "name": "shivanshguleria.ml",
-  "version": "1.4.6-2",
+  "version": "1.4.8",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
@@ -14,5 +14,8 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "pug": "~3.0.2"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.3.3"
   }
 }
