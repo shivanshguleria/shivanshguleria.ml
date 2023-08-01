@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Add to Cart</title>
+        <meta name="viewport" content="width=device-width" initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="apple-touch-icon" sizes="180x180" href="https://files.shivanshguleria.ml/src/img/add-to-cart/assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://files.shivanshguleria.ml/src/img/add-to-cart/assets">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://files.shivanshguleria.ml/src/img/add-to-cart/assets/favicon-16x16.png">
+        <link rel="manifest" href="https://files.shivanshguleria.ml/src/manifests/add-to-cart.webmanifest">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <style>
+            html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #FFF5E4;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+}
+
+img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+input {
+    color: #67675e;
+    background-color: #FFE3E1;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px 0;
+}
+
+button {
+    color: #FDFDFD;
+    background-color: #fb5656;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+button:hover {
+    background-color: #f86a6a;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+}
+
+ul li {
+    background-color: #fffdf8;
+    padding: 15px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    flex-grow: 1px;
+    color: #67675e;
+}
+
+ul li:hover {
+    background-color: #ffd8c9;
+    cursor: pointer;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="https://files.shivanshguleria.ml/src/img/add-to-cart/assets/an.png">
+            <input type="text" id="input-field" placeholder="Bread">
+            <button id="add-button">Add to cart</button>
+            <ul id="shopping-list">
+
+            </ul>
+        </div>
+        <script src="https://files.shivanshguleria.ml/src/js/add-to-cart.js" type="module"></script>
+    </body>
+</html>

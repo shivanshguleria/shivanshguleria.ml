@@ -139,7 +139,7 @@ router.get("/jsprojects/leadsTracker-extension", (req, res) => {
 
 //GET /jsprojects/add-to-cart
 router.get("/jsprojects/add-to-cart",(req, res) => {
-  res.redirect("https://shivanshguleria.github.io/add-to-cart/")
+  res.sendFile(path.resolve('projects/add-to-cart.html'))
 })
 console.log(process.env.PORT)
 module.exports = router;
