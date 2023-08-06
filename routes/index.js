@@ -141,5 +141,11 @@ router.get("/jsprojects/leadsTracker-extension", (req, res) => {
 router.get("/jsprojects/add-to-cart",(req, res) => {
   res.sendFile(path.resolve('projects/add-to-cart.html'))
 })
+
+//GET /jsprojects/generate-pass
+router.get("/jsprojects/generate-pass",(req, res) => {
+  res.sendFile(path.resolve('projects/generate-pass.html'))
+})
+
 console.log(process.env.PORT)
 module.exports = router;

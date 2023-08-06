@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link id="page_favicon" href="../favicon.ico" rel="icon" type="image/x-icon">
-    <title>Password Generater</title>
+    <title>Passphrase Generater</title>
 </head>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -39,6 +39,13 @@
             gap: 7px;
         }
 
+        label {
+            margin: 5px;
+            text-align: center;
+            color: white;
+            font-weight: 400;
+            font-size: x-large;
+        }
 
         input {
             background-color: #eb4a4a;
@@ -97,56 +104,49 @@
         }
     </style>
 <body>
-    <center> <h1>Generate a <span class="blink_me">random</span> password</h1></center>
+    <center> <h1>Generate a <span class="blink_me">random</span> passphrase</h1></center>
     <div class="container">
-        <input type="number" min="8" id="change-length-input">
+        <label for="change-length-input">Words:</label>
+        <input type="number" min="3" id="change-length-input">
+        <label for="change-char-length-input">Character in words:</label>
+        <input type="number" min= "4" id = "change-char-length-input">
         <button id="generate-btn"><strong>Generate</strong></button>
-        <button  onclick="redirectFunction()"><strong>Generate Passphrase</strong></button>
     </div>
     <div class="card">
         <p id="render-el"></p>
     </div>
     <a href="https://files.shivanshguleria.ml/src/js/random.js">Some random js code</a>
     <script>
-        const charObject = {
-            capletter: ['A','B','C','D','E','F','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
-            smallletter: ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','n','o','p','q','r','s','t','u','v','w','x','y','z'],
-            symbols: ['*','&','$','#','!','?','<','>','+'],
-            num: ['1','2','3','4','5','6','7','8','9','0']
-        }
-        let varCharLength = document.getElementById("change-length-input")
-        let generateButton = document.getElementById("generate-btn")
-        let renderPassword = document.getElementById("render-el")
+        const varCharLength = document.getElementById("change-length-input")          //Get ellement by getElementById method
+        const generateButton = document.getElementById("generate-btn")
+        const renderPassword = document.getElementById("render-el")
+        const charLength = document.getElementById("change-char-length-input")
+        let wordMinLength = charLength.min                                       //GET min value of word and charachters
         let pwdLength = varCharLength.min
-        let copyClick = document.getElementById('copy-text')
-        function generatePwd(pwdLength = 8) {
-            let resultstr = ""
-                if(pwdLength <= 20) {
-                for(let i = 0; i < pwdLength; i++){
-                    let randomChar = Math.floor(Math.random() * 4) + 1 //0 to 1.999 0 to 3.999 0 to 3
-                    if(randomChar === 1) {
-                        resultstr += charObject.capletter[Math.floor(Math.random() * charObject.capletter.length)]
-                    } else if(randomChar === 2) {
-                        resultstr += charObject.smallletter[Math.floor(Math.random() * charObject.smallletter.length)]
-                    } else if(randomChar === 3) {
-                        resultstr += charObject.symbols[Math.floor(Math.random() * charObject.symbols.length)]
-                    } else if(randomChar === 4) {
-                        resultstr += charObject.num[Math.floor(Math.random() * charObject.num.length)]
-                    }
+        let resultstr = ""
+        async function getRandomWord(wordLength = 3, charLength = 4) {
+            const response = await fetch(`https://random-word-api.herokuapp.com/word?length=${charLength}&number=${wordLength}&lang=en`);     //Use fetch API to get random words from random wordds api
+            const word = await response.json();
+            for(let i = 0; i < pwdLength; i++) {                                 
+                if(i == pwdLength -1 ) {
+                    resultstr+= `${word[i]}`            //Process random words
+                } else {
+                    resultstr+= `${word[i]}-`
                 }
-                return resultstr} else {
-                    return "Character length [20] exceded" 
-                }
+            }
         }
 
         function renderPwd() {
-            renderPassword.textContent = generatePwd(pwdLength)
+            getRandomWord(pwdLength, wordMinLength)
+            renderPassword.textContent = resultstr                 // render passphrase in renderEl
+            resultstr = ""
         }
-        function redirectFunction() {
-            location.assign("/jsprojects/generate-pass");
-      }
-        varCharLength.value = pwdLength
+       
+        varCharLength.value = pwdLength                      //reassign element to input element values
+        charLength.value = wordMinLength
+
         varCharLength.addEventListener('input',() => pwdLength = varCharLength.value)
+        charLength.addEventListener('input', () => wordMinLength = charLength.value)                //GET events from addEventListener method
         generateButton.addEventListener('click',renderPwd)
     </script>
 </body>
