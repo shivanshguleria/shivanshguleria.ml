@@ -5,6 +5,7 @@ const packageVersion = require("../package.json");
 const views = require('../views.json')
 const fs = require('fs');
 require('dotenv').config();
+let projectsUrl = "/projects/"
 //GET home page. 
 router.get('/', function(req, res) {
   res.render('index', {
@@ -95,55 +96,55 @@ else{
 }
 
 //GET projects
-router.get('/jsprojects',(req, res) => {
-  res.render('jsprojects', {
+router.get('/projects',(req, res) => {
+  res.render('projects', {
     title: "Projects",
     views: views
   })
 })
 
 //GET jsprojects/counterapp
-router.get('/jsprojects/counterapp', (req, res)=> {
+router.get( projectsUrl + 'counterapp', (req, res)=> {
   res.sendFile(path.resolve('projects/counter-app.html'));
 })
 
 //GET jsprojects/calculater-challenge
-router.get('/jsprojects/calculater-challenge', (req, res)=> {
+router.get(projectsUrl + 'calculater-challenge', (req, res)=> {
   res.sendFile(path.resolve('projects/calculater-challenge.html'));
 })
 
 //GET jsprojects/blackjack-game
-router.get('/jsprojects/blackjack-game', (req, res) => {
+router.get(projectsUrl + 'blackjack-game', (req, res) => {
   res.sendFile(path.resolve('projects/blackjack-game.html'));
 })
  
 //GET jsprojects/emoji-fighter
-router.get("/jsprojects/emoji-fighter", (req, res) => {
+router.get(projectsUrl + "emoji-fighter", (req, res) => {
   res.sendFile(path.resolve('projects/emoji-fighter.html'));
 })
 
 //GET jsprojects/sorting-fruits
-router.get("/jsprojects/sorting-fruits", (req, res) => {
+router.get(projectsUrl + "sorting-fruits", (req, res) => {
   res.sendFile(path.resolve('projects/fruit-sort.html'));
 })
 
 //GET jsprojects/password-generater
-router.get("/jsprojects/password-generater", (req, res) => {
+router.get(projectsUrl + "password-generater", (req, res) => {
   res.sendFile(path.resolve('projects/password-generater.html'));
 })
 
 //GET jsprojects/leadsTracker-extension
-router.get("/jsprojects/leadsTracker-extension", (req, res) => {
+router.get(projectsUrl + "leadsTracker-extension", (req, res) => {
   res.redirect("https://files.shivanshguleria.ml/src/misc/leadsTracker.zip")
 })
 
 //GET /jsprojects/add-to-cart
-router.get("/jsprojects/add-to-cart",(req, res) => {
+router.get(projectsUrl + "add-to-cart",(req, res) => {
   res.sendFile(path.resolve('projects/add-to-cart.html'))
 })
 
 //GET /jsprojects/generate-pass
-router.get("/jsprojects/generate-pass",(req, res) => {
+router.get(projectsUrl + "generate-pass",(req, res) => {
   res.sendFile(path.resolve('projects/generate-pass.html'))
 })
 

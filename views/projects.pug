@@ -1,0 +1,13 @@
+extends layout 
+block content 
+    ul
+      each course in views.miscCourse 
+        li 
+          p #{course.courseName}
+            a(href= course.link)  [Course Link]
+          ul 
+            each project in course.miscProjects 
+              li 
+                p #{project.name} 
+                  a(href= project.link)  [Link]
+

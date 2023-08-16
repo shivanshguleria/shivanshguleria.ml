@@ -38,9 +38,9 @@
             "disc": "Recommends jobs on basis of resume"
         },
         {
-            "link": "/jsprojects",
-            "name": "javaScript Projects",
-            "disc": "Projects Done as part of learning javascript"
+            "link": "/projects",
+            "name": "Misc",
+            "disc": "Projects Done as part of learning X skill"
         }
     ],
     "exp": [
@@ -167,28 +167,43 @@
             "link": "https://files.shivanshguleria.ml/src/cheatsheets/htmlcheatsheet.pdf"
         }
     ],
-    "jsprojects": [
+    "miscCourse":  [
         {
-            "name": "Yarn Counter App",
-            "link": "/jsprojects/counterapp"
-        },{
-            "name": "Calculater Challenge",
-            "link": "/jsprojects/calculater-challenge"
-        },{
-            "name": "Blackjack Game",
-            "link": "/jsprojects/blackjack-game"
-        },{
-            "name": "Emoji Fighter",
-            "link": "/jsprojects/emoji-fighter"
-        },{
-            "name": "Password Generater",
-            "link": "/jsprojects/password-generater"
-        },{
-            "name": "leadsTracker Chrome Extension",
-            "link": "/jsprojects/leadsTracker-extension"
-        },{
-            "name": "add-to-cart",
-            "link": "/jsprojects/add-to-cart"
-        }
-    ]
+        "courseName": "Learn Javascript",
+        "link": "https://scrimba.com/learn/learnjavascript",
+        "miscProjects": [
+            {
+                "name": "Yarn Counter App",
+                "link": "/projects/counterapp"
+            },{
+                "name": "Calculater Challenge",
+                "link": "/projects/calculater-challenge"
+            },{
+                "name": "Blackjack Game",
+                "link": "/projects/blackjack-game"
+            },{
+                "name": "Emoji Fighter",
+                "link": "/projects/emoji-fighter"
+            },{
+                "name": "Password Generater",
+                "link": "/projects/password-generater"
+            },{
+                "name": "leadsTracker Chrome Extension",
+                "link": "/projects/leadsTracker-extension"
+            },{
+                "name": "add-to-cart",
+                "link": "/projects/add-to-cart"
+            }
+        ]
+    }, {
+        "courseName": "Responsive Web Design",
+        "link": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+        "miscProjects": [
+            {
+                "name": "#",
+                "link": "#"
+            }
+        ]
+    }
+]
 }
