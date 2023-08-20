@@ -11,7 +11,7 @@ require('dotenv').config();
 let projectsUrl = "/projects/"
 
 // 1 GET commit version from GITHUB API  *START*
-let appVer;
+let appVer = "<sdsd>";
 console.log(appVer)
 let options = {
   headers: {
@@ -22,17 +22,19 @@ let options = {
   if(err) {
     console.log("Request failed")
   }
-  else {
-  const reqBody = JSON.parse(body)=
+  else if(res.statusCode === 200) {
+  const reqBody = JSON.parse(body)
   request.get(reqBody.object.url, options, function(err, res,body){
     if(err) {
       console.log("Second Request Failed")
-    } else {
+    } else if(res.statusCode === 200) {
       let reqBody2 = JSON.parse(body).message.split('\n')
       appVer = reqBody2[0]
       console.log(appVer)
     }
   })
+  } else {
+    console.log("\nCommit Request Failed due to res error [routes/index]")
   }
 });
 //1  *END*
