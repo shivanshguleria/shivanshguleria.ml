@@ -1,11 +1,91 @@
 var express = require('express');
 var router = express.Router();
+const request = require('request')
 const path = require('path');
+const app = require('../app.js')
 const packageVersion = require("../package.json");
 const views = require('../views.json')
+const routes = require("./routes.json")       
 const fs = require('fs');
 require('dotenv').config();
 let projectsUrl = "/projects/"
+
+// 1 GET commit version from GITHUB API  *START*
+let appVer;
+console.log(appVer)
+let options = {
+  headers: {
+    'User-agent': "shivanshguleria"
+  }
+}
+ request.get('https://api.github.com/repos/shivanshguleria/shivanshguleria.ml/git/ref/heads/main',options,function(err,res,body){
+  if(err) {
+    console.log("Request failed")
+  }
+  else {
+  const reqBody = JSON.parse(body)=
+  request.get(reqBody.object.url, options, function(err, res,body){
+    if(err) {
+      console.log("Second Request Failed")
+    } else {
+      let reqBody2 = JSON.parse(body).message.split('\n')
+      appVer = reqBody2[0]
+      console.log(appVer)
+    }
+  })
+  }
+});
+//1  *END*
+
+//2 Upload new book  *START*
+if(process.env.PORT === "3000"){
+  //GET upload 
+  router.get('/files/upload', (req, res) => {
+    res.render("upload", {
+      title: "Upload"
+    });
+  });
+  
+  //POST upload
+  router.post('/upload', (req,res) => {
+    let id = Object.keys(views.books).length + 1;
+    let title = req.body.title;
+    let author = req.body.cauthor;
+    let link = "https://files.shivanshguleria.ml/src/books/" + title + ".pdf";
+    let size = req.body.size;
+    let page = req.body.pages;
+    const data = fs.readFileSync("./views.json");
+    let myObject= JSON.parse(data);
+    let newData = {
+      id: id,
+      title: title,
+      author: author,
+      link: link,
+      size: size,
+      pages: page 
+    };
+    myObject['books'].push(newData);
+    jsonStr = JSON.stringify(myObject);
+    fs.writeFile("./views.json", jsonStr, (err) => {
+      // Error checking
+      if (err) throw err;
+      console.log("New data added");
+    });
+    res.json({message: "Files Added"});
+  })
+  }
+  else{
+    router.get('/files/upload', (req, res) => {
+      res.redirect("https://www.youtube.com/watch?v=H8ZH_mkfPUY");
+    });
+  
+    router.post('/upload', (req,res) => {
+      res.redirect("https://www.youtube.com/watch?v=H8ZH_mkfPUY");
+    });
+  }
+
+// 2 *END*
+
 //GET home page. 
 router.get('/', function(req, res) {
   res.render('index', {
@@ -13,11 +93,12 @@ router.get('/', function(req, res) {
     views: views
   });
 });
+
 //GET about
 router.get('/about', function(req, res) {
   res.render('about', {
     title: 'About',
-    version: packageVersion.version
+    version: appVer
   });
 });
 
@@ -49,52 +130,6 @@ router.get('/files', function(req, res) {
   })
 });
 
-if(process.env.PORT === "3000"){
-//GET upload 
-router.get('/files/upload', (req, res) => {
-  res.render("upload", {
-    title: "Upload"
-  });
-});
-
-//POST upload
-router.post('/upload', (req,res) => {
-  let id = Object.keys(views.books).length + 1;
-  let title = req.body.title;
-  let author = req.body.cauthor;
-  let link = "https://files.shivanshguleria.ml/src/books/" + title + ".pdf";
-  let size = req.body.size;
-  let page = req.body.pages;
-  const data = fs.readFileSync("./views.json");
-  let myObject= JSON.parse(data);
-  let newData = {
-    id: id,
-    title: title,
-    author: author,
-    link: link,
-    size: size,
-    pages: page 
-  };
-  myObject['books'].push(newData);
-  jsonStr = JSON.stringify(myObject);
-  fs.writeFile("./views.json", jsonStr, (err) => {
-    // Error checking
-    if (err) throw err;
-    console.log("New data added");
-  });
-  res.json({message: "Files Added"});
-})
-}
-else{
-  router.get('/files/upload', (req, res) => {
-    res.redirect("https://www.youtube.com/watch?v=H8ZH_mkfPUY");
-  });
-
-  router.post('/upload', (req,res) => {
-    res.redirect("https://www.youtube.com/watch?v=H8ZH_mkfPUY");
-  });
-}
-
 //GET projects
 router.get('/projects',(req, res) => {
   res.render('projects', {
@@ -103,49 +138,18 @@ router.get('/projects',(req, res) => {
   })
 })
 
-//GET jsprojects/counterapp
-router.get( projectsUrl + 'counterapp', (req, res)=> {
-  res.sendFile(path.resolve('projects/counter-app.html'));
+//GET all misc proojects
+for(let i = 0; i < routes.routes.length; i++) {
+let link = routes.routes[i].link
+let route = routes.routes[i].path
+router.get(projectsUrl  + link, (req, res) => {
+  res.sendFile(path.resolve(route))
 })
-
-//GET jsprojects/calculater-challenge
-router.get(projectsUrl + 'calculater-challenge', (req, res)=> {
-  res.sendFile(path.resolve('projects/calculater-challenge.html'));
-})
-
-//GET jsprojects/blackjack-game
-router.get(projectsUrl + 'blackjack-game', (req, res) => {
-  res.sendFile(path.resolve('projects/blackjack-game.html'));
-})
- 
-//GET jsprojects/emoji-fighter
-router.get(projectsUrl + "emoji-fighter", (req, res) => {
-  res.sendFile(path.resolve('projects/emoji-fighter.html'));
-})
-
-//GET jsprojects/sorting-fruits
-router.get(projectsUrl + "sorting-fruits", (req, res) => {
-  res.sendFile(path.resolve('projects/fruit-sort.html'));
-})
-
-//GET jsprojects/password-generater
-router.get(projectsUrl + "password-generater", (req, res) => {
-  res.sendFile(path.resolve('projects/password-generater.html'));
-})
+}
 
 //GET jsprojects/leadsTracker-extension
 router.get(projectsUrl + "leadsTracker-extension", (req, res) => {
   res.redirect("https://files.shivanshguleria.ml/src/misc/leadsTracker.zip")
-})
-
-//GET /jsprojects/add-to-cart
-router.get(projectsUrl + "add-to-cart",(req, res) => {
-  res.sendFile(path.resolve('projects/add-to-cart.html'))
-})
-
-//GET /jsprojects/generate-pass
-router.get(projectsUrl + "generate-pass",(req, res) => {
-  res.sendFile(path.resolve('projects/generate-pass.html'))
 })
 
 console.log(process.env.PORT)

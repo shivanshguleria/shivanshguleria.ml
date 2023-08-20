@@ -4,12 +4,10 @@ var path = require('path');
 var router = express.Router();
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var indexRouter = require('./routes/index');
-
-
-
+var indexRouter = require('./routes/index')
 var app = express();
 console.log("Welcome Back");
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -30,6 +28,7 @@ app.get('*', function(req, res){
 });
 
 
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
@@ -42,5 +41,6 @@ app.use(function(err, req, res, next) {
 });
 console.log("No bugs");
 console.log("Server is running 🎉🎉");
-module.exports = app;
+
+module.exports = app
 

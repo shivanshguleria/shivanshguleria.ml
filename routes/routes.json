@@ -1,0 +1,29 @@
+{
+    "routes": [
+        {
+            "link": "counterapp",
+            "path": "projects/counter-app.html"
+        },{
+            "link": "calculater-challenge",
+            "path": "projects/calculater-challenge.html"
+        },{
+            "link": "blackjack-game",
+            "path": "projects/blackjack-game.html"
+        },{
+            "link":  "emoji-fighter",
+            "path": "projects/emoji-fighter.html"
+        },{
+            "link": "sorting-fruits",
+            "path": "projects/fruit-sort.html"
+        },{
+            "link": "password-generater",
+            "path": "projects/password-generater.html"
+        },{
+            "link": "add-to-cart",
+            "path": "projects/add-to-cart.html"
+        },{
+            "link": "generate-pass",
+            "path": "projects/generate-pass.html"
+        }
+    ]
+}
