@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Pages
-app.get('/', (req,res) => {res.send("Site is down \\n May be down for longtime\\n Meanwhile, visit archived page \\nhttps://web.archive.org/web/20230106120447/https://shivanshguleria.ml/")});
+app.get('/', (req,res) => {res.send("<h4>Site is down <br> Meanwhile, visit <br><a href="https://web.archive.org/web/20230106120447/https://shivanshguleria.ml/">archived page</a></h4>")});
 
 
 //404
