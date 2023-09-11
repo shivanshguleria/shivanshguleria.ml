@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Pages
-app.get('/', indexRouter);
+app.use('/', indexRouter);
 
 //404
 app.get('*', function(req, res){
