@@ -16,7 +16,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //Pages
 //app.get('/', (req,res) => {res.send(`<h4>Site is down<br>Meanwhile, please visit <a href="https://web.archive.org/web/20230911040758/https://shivanshguleria.ml/">archived page</a></h4>`)});
