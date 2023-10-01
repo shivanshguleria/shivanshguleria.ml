@@ -23,6 +23,11 @@
     ],
     "projects": [
         {
+            "link": "https:shrink.fly.dev/",
+            "name": "Shrinked",
+            "disc": "Your go to link shortner"
+        },
+        {
             "link": "https://codefuel.fly.dev/",
             "name": "codeFuel",
             "disc": "Web application to upload courses and get certified"
