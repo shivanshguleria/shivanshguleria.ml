@@ -24,8 +24,8 @@
     "projects": [
         {
             "link": "https://shrink.fly.dev/",
-            "name": "Shrinked",
-            "disc": "Your go to link shortner"
+            "name": "shortCuts",
+            "disc": "Your go to URL shortner"
         },
         {
             "link": "https://codefuel.fly.dev/",
@@ -52,12 +52,12 @@
         {
             "name": "SRM Indian Energy Conference",
             "link": "https://srmiec.com/",
-            "time": "AUG 2022-Present"
+            "time": "AUG 2022-Aug 2023"
         },
         {
             "name": "ARL (Aakash Research Lab)",
             "link": "https://www.linkedin.com/company/aakash-research-labs/",
-            "time": "July 2022-Present"
+            "time": "July 2022-Sep 2023"
         }
     ],
     "books": [
