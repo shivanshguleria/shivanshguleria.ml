@@ -24,6 +24,9 @@
         },{
             "link": "generate-pass",
             "path": "projects/generate-pass.html"
+        },{
+            "link": "chat",
+            "path": "projects/anon.html"
         }
     ]
 }

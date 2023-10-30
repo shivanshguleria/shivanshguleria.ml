@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Add to Cart</title>
+        <meta name="viewport" content="width=device-width" initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="apple-touch-icon" sizes="180x180" href="https://files.shivanshguleria.ml/src/img/add-to-cart/assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://files.shivanshguleria.ml/src/img/add-to-cart/assets">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://files.shivanshguleria.ml/src/img/favicon.png">
+        <link rel="manifest" href="https://files.shivanshguleria.ml/src/manifests/add-to-cart.webmanifest">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <style>
+            html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #000000;
+    color: white;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+}
+
+img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+input {
+    color: #000000;
+    background-color: #ffffff;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px 0;
+    
+}
+
+button {
+    color: #FDFDFD;
+    background-color: #700b0b;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color:#812020;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    flex-flow:column wrap;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* ul li {
+    background-color: #fffdf8;
+    padding: 15px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    flex-grow: 1px;
+    min-width: 60px;
+    max-width: 200px;
+    color: #67675e;
+} */
+
+
+ #mess    {
+    display: flex;
+    align-items: baseline;
+    background-color: white;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-weight: 600;
+    height: 25px;
+    min-width: 60px;
+    width: fit-content;
+    color: black;
+   gap: 3px;
+    padding: 10px;
+    
+}  
+
+
+#mess:hover {
+    background-color: #6f1b1b;
+    color: white;
+    cursor: pointer;
+}
+
+
+#users {
+    font-size: 15px;
+    align-self: flex-end;
+ padding-right: 15px;
+}
+
+#time {
+    font-size: 10px;  
+    margin-left: 10px;
+    
+}
+
+#message {
+    font-size: 25px;
+    justify-content: center;
+    margin-top: 5px;
+    font-weight: bolder;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="https://files.shivanshguleria.ml/src/img/jolly_roger.png">
+            <input type="text" id="input-field" placeholder="Type your Message">
+            <input type="text" id="input-field-name" placeholder="Your Name [OPT]">
+            <button id="add-button">Send</button>
+            <ul id="shopping-list" >
+
+            </ul>
+        </div>
+        
+        <script src="https://files.shivanshguleria.ml/src/js/anon.js" type="module"></script>
+    </body>
+</html>

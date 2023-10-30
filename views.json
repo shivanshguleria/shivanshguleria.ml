@@ -198,6 +198,9 @@
             },{
                 "name": "add-to-cart",
                 "link": "/projects/add-to-cart"
+            },{
+                "name": "Anonymous Chat",
+                "link": "/projects/chat"
             }
         ]
     }, {
