@@ -116,7 +116,7 @@ router.get('/test',function(req, res){
 
 //GET resume
 router.get('/resume', function(req, res) {
-  res.sendFile(path.resolve('public/resume.pdf'));
+  res.sendFile(path.resolve('public/Resume.pdf'));
 });
 
 //GET sitemap
