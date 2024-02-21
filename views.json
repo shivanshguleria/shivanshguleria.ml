@@ -156,7 +156,15 @@
             "link": "https://files.shivanshguleria.ml/src/books/The gospel of wealth.pdf",
             "size": "0.737",
             "pages": "10"
+        },{
+            "id": 13,
+            "title": "AD.pdf",
+            "author": "N. Wirth",
+            "link": "https://files.shivanshguleria.ml/src/books/AD.pdf",
+            "size": "2.29",
+            "pages": "212"
         }
+            
     ],
     "cheatsheet": [
         {
