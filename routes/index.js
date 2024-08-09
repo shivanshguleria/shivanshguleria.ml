@@ -7,6 +7,7 @@ const packageVersion = require("../package.json");
 const views = require('../views.json')
 const routes = require("./routes.json")       
 const fs = require('fs');
+const { json } = require('express/lib/response.js');
 require('dotenv').config();
 let projectsUrl = "/projects/"
 
@@ -90,6 +91,14 @@ if(process.env.PORT === "3000"){
 
 //GET home page. 
 router.get('/', function(req, res) {
+  res.redirect("https://shivanshguleria.xyz")
+  // res.render('index', {
+  //   title: 'Shivansh Guleria',
+  //   views: views
+  // });
+});
+
+router.get('/web', function(req, res) {
   res.render('index', {
     title: 'Shivansh Guleria',
     views: views
